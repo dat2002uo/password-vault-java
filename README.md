@@ -1,27 +1,4 @@
 # Password-Vault-Java
-A command-line password vault implemented in Java.
-
-## Tech Stack
-- Java 17
-- AES-256-GCM AEAD authenticated encryption
-- PBKDF2-HMAC-SHA256 for key derivation
-
-## Features
-- Create, read, update and delete stored passwords; export & load encrypted vault files
-- Use header metadata as AAD to verify integrity, against tampering and downgrade attacks
-- Generate fresh salt and nonce on every save to avoid GCM nonce reuse vulnerability
-- Secure error handling: keep in-memory data for invalid input; clear sensitive memory on decryption failure
-- Custom JSON parser for input validation, with sensitive byte array cleanup
-
-## Usage
-Compile and run the main class. Supported commands:
-`create / set / get / remove / dump / load`
-
-## Note
-This is for learning cryptographic security mechanisms, not for production use.
-
-Chinese version:
-# Password-Vault-Java
 Java实现的命令行密码保险库。
 
 ## 技术栈
